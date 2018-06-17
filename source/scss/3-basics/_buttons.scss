@@ -1,3 +1,5 @@
+@import "../2-helpers/_variables";
+
 .button,
 button,
 input[type="submit"],
@@ -27,3 +29,44 @@ input[type="button"] {
     transform: translateY(3px);
   }
 }
+
+
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid $mainColor;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+
+// 100% width
+.btn-action {
+  display: block;
+  margin-bottom: 16px;
+}
+
+
+.btn-empty {
+  background: transparent;
+}
+
+.btn-filled {
+  background: $mainColor;
+  color: #ffffff;
+}
+
+.btn-filled:hover {
+  opacity: 1;
+  background: darken($mainColor, 20%);
+  color: #ffffff;
+}
+
+// TODO: kolor brazowy podpiąc pod zmienną scss
+.btn-empty:hover {
+  background: lighten($mainColor, 20%);
+  color: $mainColor;
+}
+

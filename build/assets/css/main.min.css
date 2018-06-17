@@ -194,7 +194,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #0d1218 url("../img/ep_naturalblack.png");
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -245,6 +244,35 @@ input[type="button"] {
     outline: 0;
     transform: scale(1.01);
     transform: translateY(3px); }
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #A67E5D;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-weight: bold;
+  text-align: center; }
+
+.btn-action {
+  display: block;
+  margin-bottom: 16px; }
+
+.btn-empty {
+  background: transparent; }
+
+.btn-filled {
+  background: #A67E5D;
+  color: #ffffff; }
+
+.btn-filled:hover {
+  opacity: 1;
+  background: #654c38;
+  color: #ffffff; }
+
+.btn-empty:hover {
+  background: #cab29f;
+  color: #A67E5D; }
 
 a {
   color: #0074D9;
@@ -349,49 +377,35 @@ hr {
   left: 0; }
 
 body {
-  height: 100%;
+  height: 100vh; }
+
+.page-login {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%; }
+  .page-login .action-block {
+    width: 100%; }
 
-#page-home {
-  margin: 20px;
-  display: flex; }
+.signup-block {
+  max-width: 350px;
+  margin: 0 auto; }
+  .signup-block::before {
+    clear: both;
+    content: "";
+    display: table;
+    height: 0; }
+  .signup-block .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px auto; }
 
-.author {
-  margin-top: 100px; }
-  .author p {
-    margin: 0; }
+.signup-title {
+  font-size: 27px;
+  line-height: 32px; }
 
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 20px 0 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0; }
-
-.wrapper-starter {
-  width: 100%;
-  max-width: 700px;
-  background: white;
-  padding: 40px;
-  border-radius: 2px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
-  text-align: center; }
-  .wrapper-starter p {
-    color: #666; }
-
-h1 {
-  margin-bottom: 20px; }
-
-h4 {
-  margin-top: 100px; }
-
-.button {
-  margin-top: 50px;
-  border: 2px solid #0074D9;
-  color: #0074D9; }
-
-.flex-video {
-  border: 1px solid black; }
+.signup-caller {
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 48px; }
