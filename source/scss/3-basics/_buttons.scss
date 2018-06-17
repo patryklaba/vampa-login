@@ -36,6 +36,7 @@ input[type="button"] {
   display: inline-block;
   cursor: pointer;
   border: 1px solid $mainColor;
+  color: $mainColor;
   padding: 6px 16px;
   border-radius: 100px;
   font-weight: bold;
@@ -64,9 +65,8 @@ input[type="button"] {
   color: #ffffff;
 }
 
-// TODO: kolor brazowy podpiąc pod zmienną scss
 .btn-empty:hover {
-  background: lighten($mainColor, 20%);
+  background: lighten($mainColor, 30%);
   color: $mainColor;
 }
 
