@@ -61,12 +61,12 @@ input[type="button"] {
 
 .btn-filled:hover {
   opacity: 1;
-  background: darken($mainColor, 20%);
+  background: darken($mainColor, 10%);
   color: #ffffff;
 }
 
 .btn-empty:hover {
-  background: lighten($mainColor, 30%);
+  background: lighten($mainColor, 20%);
   color: $mainColor;
 }
 

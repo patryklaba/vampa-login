@@ -2,6 +2,11 @@ body {
   height: 100vh; 
 }
 
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .page-login {
   display: flex;
   flex-direction: column;
@@ -13,11 +18,7 @@ body {
   }
 }
 
-
 .signup-block {
-  max-width: 350px;
-  margin: 0 auto;
-
   // cure for collapsing margin 
   &::before {
     clear: both;
@@ -42,4 +43,39 @@ body {
   font-size: 20px;
   line-height: 25px;
   margin-top: 48px;
+}
+
+.content-block {
+  width: 100%;
+  margin: 32px 0;
+  background-color: #dfb390;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(59,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23cd948e'/%3E%3Cstop offset='1' stop-color='%23ac7d8e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='33' height='33' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23dfb390' cx='16.5' cy='16.5' r='16.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.13'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+
+  .features-block {
+    .feature-desc {
+      display: block;
+      margin: 40px;
+      color: #fff;
+    }
+  }
+}
+
+.linked-nav-block {
+  margin-top: auto;
+  border-top: 1px solid #e6ecf0;
+  
+  .nav-footer-links {
+    list-style: none;
+  }
+  .nav-footer-item {
+    display: inline-block;
+    padding: 0 9px;
+    a {
+      color: $silver;
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
 }
